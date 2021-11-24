@@ -85,7 +85,7 @@ public class EightNumber {
 		}
 		return isGoal;
 	}
-
+	// this get data in top stack
 	public static int[] dequeue(Stack<int[]> L) {
 		if (LRemove.isEmpty()) {
 			while (!L.isEmpty()) {
@@ -96,7 +96,7 @@ public class EightNumber {
 		LRemove.clear();
 		return datapopup;
 	}
-
+	// sort L1 to get best result to continuous process
 	public static Stack<int[]> sortstack(Stack<int[]> input) {
 		Stack<int[]> tmpStack = new Stack<int[]>();
 		while (!input.isEmpty()) {
@@ -136,7 +136,7 @@ public class EightNumber {
 		}
 		return result;
 	}
-
+	// print 3 line of matrix in one process
 	public static void main(String[] arg) {
 		int[] currentMatrix = { 1, 2, 8, 5, 7, 0, 4, 6, 3 };
 		System.out.println("   u   |                v                    |               L1                    |  L");
